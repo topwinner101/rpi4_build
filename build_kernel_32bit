@@ -1,7 +1,7 @@
 export  KERNEL=kernel71 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
 make  bcm2711_defconfig
-
-make  -j8   Image modules dtbs
+make  -j8   Image modules 
+make  dtbs
 
 
 mkdir out_32bit

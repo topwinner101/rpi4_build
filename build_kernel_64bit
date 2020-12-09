@@ -1,7 +1,8 @@
 export  KERNEL=kernel8 ARCH=arm64   CROSS_COMPILE=aarch64-linux-gnu-
 make  bcm2711_defconfig
 
-make  -j8   Image modules dtbs
+make  -j8   Image modules 
+make  dtbs
 
 
 mkdir out_64bit
